@@ -6,3 +6,9 @@ yarn.lock
 lib/lexer.emcc.js
 src/lexer.js
 types/lexer.d.ts
+
+
+# Added by cargo
+
+/target
+/Cargo.lock

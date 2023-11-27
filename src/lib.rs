@@ -9,13 +9,13 @@ extern "C" {
 
 #[repr(C)]
 pub struct Import<'a> {
-  start: *const u8,
-  end: *const u8,
-  statement_start: *const u8,
-  statement_end: *const u8,
-  assert_index: *const u8,
-  dynamic: *const u8,
-  safe: bool,
+  pub start: *const u8,
+  pub end: *const u8,
+  pub statement_start: *const u8,
+  pub statement_end: *const u8,
+  pub assert_index: *const u8,
+  pub dynamic: *const u8,
+  pub safe: bool,
   next: *const Import<'a>,
   phantom: PhantomData<&'a ()>,
 }
